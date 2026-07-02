@@ -7,7 +7,9 @@ public class usingHuman01 {
         System.out.println(neha.name);
         System.out.println(human_01.population);
 
-        //greeting(); only this will error as it is nonstatic which is used in static
+        //greeting(); // Error: main() is static but greeting() is non-static.
+                      // A static method cannot directly call a non-static method because
+                      // no object exists.
 
         //to use non-static , we are explicitly creating it's object so that we can use it
         usingHuman01 obj = new usingHuman01();
@@ -39,4 +41,7 @@ public class usingHuman01 {
 //usingHuman01 obj = new usingHuman01();
 //obj.greeting();
 
-//
+//| Method Type           | Can call Static? | Can call Non-Static?         |
+//| --------------------- | ---------------- | ---------------------------- |
+//| **Static Method**     | ✅ Yes            | ❌ Directly No (needs object) |
+//| **Non-Static Method** | ✅ Yes            | ✅ Yes                        |

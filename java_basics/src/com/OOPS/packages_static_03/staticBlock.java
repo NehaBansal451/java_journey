@@ -5,7 +5,8 @@ public class staticBlock {
     static int a = 4;
     static int b;
 
-    //this will be run only once when the first object is create i.e when the class is loaded for first time
+    // This static block runs only once when the class is loaded into memory,
+// before main() executes or before the first object is created.
     static {
         System.out.println("I am in static block");
         b = a * 5;
@@ -17,3 +18,7 @@ public class staticBlock {
 }
 
 
+//Static variables → Created when the class loads.
+//Static block → Runs once when the class loads.
+//main() → Starts after the static block finishes.
+//Creating an object is not required for a static block to execute.

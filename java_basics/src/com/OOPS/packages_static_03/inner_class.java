@@ -1,10 +1,9 @@
 package com.OOPS.packages_static_03;
 
 
-//outside  can not be static , but inner one can be or can not be static
+
 public class inner_class {
-    // static class is defined in inner_class, hence it will not be dependent on inner_class object.
-     //but it will be dependent on psvm object . thats why irrespective of static , it is giving different result
+
      static class Test{
          String name;
          public Test(String name){
@@ -20,3 +19,10 @@ public class inner_class {
     }
 
 }
+
+
+//Why is Test declared static?-->Test belongs to the class inner_class, not to an object of inner_class.
+//Static inner class(Test) → Doesn't need an outer class object.
+//Non-static inner class → Needs an outer class object.
+//main() is just a method, not an object.
+//name is non-static, so every object (a and b) has its own copy.
