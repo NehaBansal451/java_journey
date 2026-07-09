@@ -1,8 +1,9 @@
 package com.recursion;
 
 public class recursionPermutation {
-    static void main(String[] args) {
-         permutation("","abc");
+    public static void main(String[] args) {
+
+        permutation("","abc");
     }
     static void permutation(String p ,String up){
         if(up.isEmpty()){
